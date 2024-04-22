@@ -18,7 +18,42 @@ const shopContext = [
     price: `\$${75}`,
     rating: 4,
     ratingCount: `${2}`,
-  }
+  },
+  {
+    id: 3,
+    img: Keyboard,
+    name: 'Smart Toaster',
+    price: `\$${245}`,
+    rating: 3,
+    ratingCount: `${12}`,
+  },
+  {
+    id: 4,
+    img: Keyboard,
+    name: 'Gaming PC',
+    price: `\$${1245}`,
+    rating: 5,
+    ratingCount: `${52}`,
+    percentOff: `${12}%`
+  },
+  {
+    id: 5,
+    img: Keyboard,
+    name: 'Headset',
+    price: `\$${20}`,
+    rating: 4,
+    ratingCount: `${2.5}`,
+    percentOff: `${5}%`
+  },
+  {
+    id: 6,
+    img: Keyboard,
+    name: 'Windows 11 PRO',
+    price: `\$${45}`,
+    rating: 4,
+    ratingCount: `${11.3}`,
+    percentOff: `${65}%`
+  },
 ]
 
 // Generates a shop item from the shopcontext array
@@ -30,6 +65,7 @@ function ShopItem() {
           <img src={item.img} draggable="false" alt={item.name} />
           <div className='sale-percent-off' style={item.percentOff ? {display:'flex'} : {display: 'none'}}>
             <h1>{item.percentOff}</h1>
+            <p>OFF</p>
           </div>
         </div>
         <div className='store-item-bottom'>

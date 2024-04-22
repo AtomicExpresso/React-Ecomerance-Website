@@ -7,6 +7,23 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
+
+  &::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(204, 204, 204, 0.452);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(163, 163, 163, 0.452);
+  }
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+  }
 }
 
 //============
@@ -139,8 +156,26 @@ nav {
   gap: 10px;
 
   & button {
-    margin: auto;
+    margin: 20px auto;
     width: 30%;
+  }
+}
+
+.sale-btn-row{
+  display: block;
+  margin-left: auto;
+
+  & button {
+    margin: 5px;
+    border: none;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+
+    &:active{
+      background-color: rgba(205, 205, 205, 0.806);
+    }
   }
 }
 
@@ -203,6 +238,20 @@ nav {
 .sale-row{
   display: flex;
   gap: 10px;
+  overflow-x: hidden;
+  position: relative;
+
+  & button {
+    position: absolute;
+    top: 35%;
+    width: 3%;
+    height: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.201);
+    border-radius: 10px;
+    z-index: 99;
+  }
+
+  padding-bottom: 25px;
 }
 
 //Componets
@@ -261,17 +310,23 @@ nav {
   & .sale-percent-off {
     background-color: #DB4444;
     color: white;
-    width: 50px;
+    width: auto;
     height: 20px;
     border-radius: 20px;
     position: absolute;
     left: 10%;
     top: 7%;
+    white-space: nowrap;
 
     & h1 {
       font-size: 16px;
       text-align: center;
-      margin: auto;
+      margin: auto 0 auto 5px;
+    }
+
+    & p {
+      font-size: 8px;
+      margin: 0;
     }
   }
 }

@@ -7,6 +7,28 @@ import useTimer from '../../logic/timer'
 function HomeSale(){
   const { curHour, curMinute, curSecond } = useTimer();
 
+  const moveSaleRowScroll = scrollThis => {
+    const saleRow = document.querySelector('.sale-row');
+
+    switch(scrollThis){
+      case 'right':
+        saleRow.scrollTo({
+          left: saleRow.scrollLeft + 100,
+          behavior: 'smooth'
+        });
+      break;
+      case 'left':
+        saleRow.scrollTo({
+          left: saleRow.scrollLeft - 100,
+          behavior: 'smooth'
+        });
+      break;
+      default:
+        console.error('Scroll button erorr')
+      break;
+    }
+  }
+
   return (
     <div className="sale-container">
       <div className="sales-legend">
@@ -33,6 +55,10 @@ function HomeSale(){
             </div>
           </div>
       </div>
+        <div className='sale-btn-row'>
+          <button onClick={() => moveSaleRowScroll('left')}>{`<`}</button>
+          <button onClick={() => moveSaleRowScroll('right')}>{`>`}</button>
+        </div>
       <div className='sale-row'>
         <ShopItem/>
       </div>
