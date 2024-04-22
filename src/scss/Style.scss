@@ -254,6 +254,48 @@ nav {
   padding-bottom: 25px;
 }
 
+//3. category
+
+.category-items{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  & :hover{
+    background-color: #DB4444;
+    color: white;
+    scale: 0.95;
+
+    & img:not(:hover) {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(176deg) brightness(102%) contrast(102%);
+    }
+  }
+}
+
+.category-item-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.288);
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+
+  & img {
+    width: 42px;
+    height: 42px;
+    margin: auto;
+  }
+
+  & h1 {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+}
+
 //Componets
 
 .store-item{

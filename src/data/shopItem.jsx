@@ -1,4 +1,4 @@
-import Keyboard from '../assets/images/shop-items/keyboard.svg'
+import Keyboard from '../assets/images/shop-items/keyboard.svg';
 import RatingStar from '../assets/icons/rating-star.svg';
 
 const shopContext = [

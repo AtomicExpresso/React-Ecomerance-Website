@@ -54,11 +54,11 @@ function HomeSale(){
               <h2>{curSecond}</h2>
             </div>
           </div>
-      </div>
-        <div className='sale-btn-row'>
+          <div className='sale-btn-row'>
           <button onClick={() => moveSaleRowScroll('left')}>{`<`}</button>
           <button onClick={() => moveSaleRowScroll('right')}>{`>`}</button>
         </div>
+      </div>
       <div className='sale-row'>
         <ShopItem/>
       </div>
