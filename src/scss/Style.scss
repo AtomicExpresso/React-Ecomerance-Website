@@ -214,6 +214,7 @@ nav {
   border-radius: 10px;
   transition: 0.2s;
   cursor: pointer;
+  position: relative;
 
   &:hover {
     background-color: rgba(228, 228, 228, 0.096);
@@ -254,6 +255,23 @@ nav {
     & div {
       font-size: 13px;
       color: gray;
+    }
+  }
+
+  & .sale-percent-off {
+    background-color: #DB4444;
+    color: white;
+    width: 50px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 10%;
+    top: 7%;
+
+    & h1 {
+      font-size: 16px;
+      text-align: center;
+      margin: auto;
     }
   }
 }

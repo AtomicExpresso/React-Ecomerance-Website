@@ -9,13 +9,14 @@ const shopContext = [
     price: `\$${40}`,
     rating: 5,
     ratingCount: `${75}`,
+    percentOff: `${50}%`
   },
   {
     id: 2,
     img: Keyboard,
     name: 'Iphone 8',
     price: `\$${75}`,
-    rating: 5,
+    rating: 4,
     ratingCount: `${2}`,
   }
 ]
@@ -27,13 +28,16 @@ function ShopItem() {
       <div className='store-item' key={item.id}>
         <div className='store-item-img'>
           <img src={item.img} draggable="false" alt={item.name} />
+          <div className='sale-percent-off' style={item.percentOff ? {display:'flex'} : {display: 'none'}}>
+            <h1>{item.percentOff}</h1>
+          </div>
         </div>
         <div className='store-item-bottom'>
           <h1>{item.name}</h1>
           <h2>{item.price}</h2>
           <div className='rating-row'>
             <div>
-              {[...Array(5)].map((_, index) => (
+              {[...Array(item.rating)].map((_, index) => (
                 <img key={index} src={RatingStar} draggable="false" alt="Rating Star" />
               ))}
             </div>

@@ -1,26 +1,11 @@
 import { useState, useEffect } from 'react';
 import BoltIcon from '../../assets/icons/bolt-icon.svg';
 import ShopItem from '../../data/shopItem';
+import useTimer from '../../logic/timer'
+
 
 function HomeSale(){
-  const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-
-  const [curhour, Sethour] = useState(hours);
-  const [curMinute, SetMinute] = useState(minutes);
-  const [curSecond, SetSecond] = useState(seconds);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      Sethour(hours)
-      SetMinute(minutes)
-      SetSecond(seconds)
-    }, 1000)
-
-    return () => clearInterval(interval);
-  }, [curhour, curMinute, curSecond])
+  const { curHour, curMinute, curSecond } = useTimer();
 
   return (
     <div className="sale-container">
@@ -34,7 +19,7 @@ function HomeSale(){
           <div className="sale-timer">
             <div>
               <h3>Hours</h3>
-              <h2>{curhour}</h2>
+              <h2>{curHour}</h2>
             </div>
             <h1>:</h1>
             <div>
