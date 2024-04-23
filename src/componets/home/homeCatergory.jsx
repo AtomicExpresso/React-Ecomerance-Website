@@ -33,10 +33,6 @@ function HomeCategory(){
       <div className="sale-title">
         <img src={CategoryIcon} draggable="false"></img>
         <h1>Browse By Category</h1>
-          <div className='sale-btn-row'>
-          <button onClick={() => moveSaleRowScroll('left')}>{`<`}</button>
-          <button onClick={() => moveSaleRowScroll('right')}>{`>`}</button>
-        </div>
       </div>
       <div className='category-row'>
         <CategorieBuild/>

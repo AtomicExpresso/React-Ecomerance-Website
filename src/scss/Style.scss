@@ -106,6 +106,15 @@ nav {
 // 2. Home Page
 //============
 
+//Setup
+.landing-page{
+  & hr{
+    width: 85%;
+    margin: auto;
+    border-color: hsla(0, 0%, 0%, 0.336);
+  }
+}
+
 //1a. Home Hero
 .home-hero{
   margin: 10px 0;
@@ -203,6 +212,7 @@ nav {
     width: 10px;
     height: 30px;
     background-color: #DB4444;
+    border-radius: 3px;
   }
 
   & h1 {
@@ -254,7 +264,7 @@ nav {
   padding-bottom: 25px;
 }
 
-//3. category
+//3a. category
 
 .category-items{
   display: flex;
@@ -293,6 +303,26 @@ nav {
   & h1 {
     font-weight: lighter;
     font-size: 20px;
+  }
+}
+
+//4a. Trending
+.trending-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.trending-container{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 8%;
+  gap: 10px;
+
+  & button {
+    width: 20%;
+    height: 10%;
   }
 }
 
@@ -369,6 +399,20 @@ nav {
     & p {
       font-size: 8px;
       margin: 0;
+    }
+  }
+
+  & .store-item-price{
+    display: flex;
+    gap: 5px;
+
+    & h2 {
+      color: #DB4444;
+    }
+
+    & h3 {
+      font-size: 12px;
+      text-decoration: line-through;
     }
   }
 }
