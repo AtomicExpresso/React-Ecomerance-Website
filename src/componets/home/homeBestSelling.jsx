@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import ShopItem from '../../data/shopItem';
-
+import {ShopItemTwo} from '../../data/shopItem';
 
 function HomeBestSaleing(){
+
   return (
     <div className="trending-container">
       <div className="sales-legend">
@@ -14,7 +14,7 @@ function HomeBestSaleing(){
         <button className='btn btn-danger'>View All</button>
       </div>
       <div className='sale-row'>
-        <ShopItem/>
+        <ShopItemTwo />
       </div>
     </div>
   )

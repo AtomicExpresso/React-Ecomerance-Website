@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "img": "keyboard",
+    "name": "Gaming keyboard",
+    "oldPrice": 40,
+    "price": 40,
+    "rating": 5,
+    "ratingCount": 75,
+    "percentOff": 50,
+    "onSale": true
+  },
+  {
+    "id": 2,
+    "img": "keyboard",
+    "name": "Iphone 8",
+    "oldPrice": 75,
+    "price": 75,
+    "rating": 4,
+    "ratingCount": 2,
+    "percentOff": 5,
+    "onSale": true
+  },
+  {
+    "id": 3,
+    "img": "keyboard",
+    "name": "Smart Toaster",
+    "oldPrice": 245,
+    "price": 245,
+    "rating": 3,
+    "ratingCount": 12,
+    "percentOff": 2,
+    "onSale": true
+  },
+  {
+    "id": 4,
+    "img": "keyboard",
+    "name": "Gaming PC",
+    "oldPrice": 1245,
+    "price": 1245,
+    "rating": 5,
+    "ratingCount": 52,
+    "percentOff": 12,
+    "onSale": true
+  },
+  {
+    "id": 5,
+    "img": "keyboard",
+    "name": "Headset",
+    "oldPrice": 20,
+    "price": 20,
+    "rating": 4,
+    "ratingCount": 2.5,
+    "percentOff": 8,
+    "onSale": true
+  },
+  {
+    "id": 6,
+    "img": "keyboard",
+    "name": "Google Home",
+    "oldPrice": 50,
+    "price": 30,
+    "rating": 4,
+    "ratingCount": 2.5,
+    "percentOff": 25,
+    "onSale": true
+  }
+]

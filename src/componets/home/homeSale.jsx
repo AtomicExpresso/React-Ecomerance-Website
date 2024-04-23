@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import BoltIcon from '../../assets/icons/bolt-icon.svg';
-import ShopItem from '../../data/shopItem';
+import {ShopItem} from '../../data/shopItem';
 import useTimer from '../../logic/timer'
 
 
