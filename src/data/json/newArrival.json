@@ -1,0 +1,36 @@
+{
+  "NewArrivals": [
+    {
+      "id": 1,
+      "Title": "Playstation 5",
+      "Desc": "Black and white version of the PS5",
+      "Img": "PS5",
+      "BtnTxt": "Shop Now",
+      "BoxType": "Big"
+    },
+    {
+      "id": 2,
+      "Title": "Gaming Laptops",
+      "Desc": "Featured and trending gaming laptops",
+      "Img": "laptop",
+      "BtnTxt": "Shop Now",
+      "BoxType": "Wide"
+    },
+    {
+      "id": 3,
+      "Title": "Speakers",
+      "Desc": "Amazon Wireless Speakers",
+      "Img": "speakers",
+      "BtnTxt": "Shop Now",
+      "BoxType": "Square"
+    },
+    {
+      "id": 4,
+      "Title": "Smart Devices",
+      "Desc": "The latest smart devices",
+      "Img": "smartdevice",
+      "BtnTxt": "Shop Now",
+      "BoxType": "Square"
+    }
+  ]
+}
