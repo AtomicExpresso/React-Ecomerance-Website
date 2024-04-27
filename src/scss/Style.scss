@@ -3,10 +3,14 @@
   src: url(../assets/fonts/Roboto.ttf);
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
 
   &::-webkit-scrollbar {
     width: 13px;
@@ -24,6 +28,16 @@
     border-radius: 10px;
     box-shadow: inset 7px 10px 12px #f0f0f0;
   }
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+:root {
+  --link-color: rgb(0, 102, 255);
+
+  --footer-background: #000000;
 }
 
 //============
@@ -101,6 +115,132 @@ nav {
     }
   }
 }
+
+//============
+// 2. Footer
+//============
+.footer-container{
+  background-color: var(--footer-background)
+}
+
+.footer-logo{
+  color: white;
+
+  & h1 {
+    font-size: 35px;
+  }
+
+  & .social-content{
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover{
+      background-color: white;
+      scale: 0.8;
+
+      & img {
+        filter: brightness(0) saturate(100%)
+      }
+    }
+  }
+
+  & .footer-socials{
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.footer-app{
+  color: white;
+
+  & h1 {
+    font-size: 20px;
+  }
+
+  & p {
+    color: #adadad;
+  }
+}
+
+.footer-app-img{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  & .footer-app-store{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.95s;
+
+    & img {
+      cursor: pointer;
+
+      &:hover{
+        scale: 0.95;
+      }
+    }
+  }
+}
+
+.footer-bottom{
+  background-color: var(--footer-background);
+  text-align: center;
+  color: rgb(72, 72, 72);
+  padding: 4px;
+
+  & hr{
+    border-color: #ffffff;
+    width: 100%;
+  }
+
+  & h2 {
+    font-size: 15px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+  }
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  color: white;
+  font-family: 'Poppins';
+
+  & h1{
+    font-size: 20px;
+    font-weight: 100;
+    font-weight: bold;
+  }
+
+  & li {
+    font-size: 16px;
+    font-weight: light;
+    cursor: pointer;
+
+    &:hover{
+      color: var(--link-color)
+    }
+  }
+
+  & ul {
+    list-style: none;
+  }
+}
+
 
 //============
 // 2. Home Page
