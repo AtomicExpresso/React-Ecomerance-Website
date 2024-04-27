@@ -38,9 +38,9 @@ function HomeNewArrival(){
 
   const ArticleBuildTwo = newArrival.NewArrivals.map(item => {
     return (
-      <div>
+      <div key={item.id}>
       {item.BoxType === 'Wide' &&
-      <div className='article-item' key={item.id} style={{backgroundImage: `url(${articleBG(item.Img)})`, backgroundSize: 'cover', borderRadius: '10px'}}> 
+      <div className='article-item' style={{backgroundImage: `url(${articleBG(item.Img)})`, backgroundSize: 'cover', borderRadius: '10px'}}> 
         <div style={{width: '500px', height: '160px'}} className='article-wide'>
           <h1>{item.Title}</h1>
           <p>{item.Desc}</p>
@@ -54,9 +54,9 @@ function HomeNewArrival(){
 
   const ArticleBuildThree = newArrival.NewArrivals.map(item => {
     return (
-      <div>
+      <div key={item.id}>
       {item.BoxType === 'Square' && 
-      <div className='article-item' key={item.id} style={{backgroundImage: `url(${articleBG(item.Img)})`, backgroundSize: 'cover', borderRadius: '10px'}}>
+      <div className='article-item' style={{backgroundImage: `url(${articleBG(item.Img)})`, backgroundSize: 'cover', borderRadius: '10px'}}>
       <div style={{width: '220px', height: '220px'}} className='article-square'>
         <h1>{item.Title}</h1>
         <p>{item.Desc}</p>

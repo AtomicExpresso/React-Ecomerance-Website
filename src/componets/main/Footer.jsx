@@ -8,6 +8,7 @@ import socialLinkedin from '../../assets/icons/social-linkedin.svg';
 
 const footerCol = [
   {
+    id: 1,
     title: 'Account',
     item: [
       "My Account",
@@ -17,6 +18,7 @@ const footerCol = [
     ]
   },
   {
+    id: 2,
     title: 'Tools',
     item: [
       "Developer API",
@@ -24,6 +26,7 @@ const footerCol = [
     ]
   },
   {
+    id: 3,
     title: 'Support',
     item: [
       "Customer Support",
@@ -32,6 +35,7 @@ const footerCol = [
     ]
   },
   {
+    id: 4,
     title: 'Legal',
     item: [
       "Terms of service",
@@ -46,10 +50,10 @@ const footerCol = [
 function Footer(){
   const BuildCol = footerCol.map(item => {
     return (
-      <div className="footer-col">
+      <div className="footer-col"  key={item.id}>
         <ul>
           <h1>{item.title}</h1>
-          {item.item.map(list => <li><a>{list}</a></li>)}
+          {item.item.map(list => <li key={list}><a>{list}</a></li>)}
         </ul>
       </div>
     )

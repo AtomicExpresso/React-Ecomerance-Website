@@ -612,7 +612,42 @@ nav {
   }
 }
 
+//7a. Service container
+.service-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 0 50px;
+  flex-wrap: wrap;
+}
+
+.service-item{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 62px;
+    height: 62px;
+    margin: 0 0 10px;
+  }
+
+  & h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  & p {
+    font-size: 14px;
+  }
+}
+
+//=================
 //Componets
+//=================
 
 .store-item{
   display: flex;
