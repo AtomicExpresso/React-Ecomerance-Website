@@ -4,7 +4,8 @@ let hour = 15
 let minute = 5
 let second = 20
 
-// Does a countdown timer for the Flash Sale
+// {Does a countdown timer for the Flash Sale}
+// Returns a new object to state everytime a curTime value is changed
 function useTimer(){
   let [curTime, setTime] = useState({
     hours: hour,
@@ -43,9 +44,12 @@ function useTimer(){
         }
       }
       if (curTime.hours <= 0 && curTime.minutes <= 0 && curTime.seconds <= 0){
-        setTime(prevState => prevState.hours);
-        setTime(prevState => prevState.minutes);
-        setTime(prevState => prevState.seconds);
+        setTime(prevState => ({
+          ...prevState,
+          hour: prevState.hours,
+          minutes: prevState.minutes,
+          seconds: prevState.seconds
+        }));
       }
     }, 1000);
 
