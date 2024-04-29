@@ -5,7 +5,7 @@ import useTimer from '../../logic/timer'
 
 
 function HomeSale(){
-  const { curHour, curMinute, curSecond } = useTimer();
+  const { curTime } = useTimer();
 
   const moveSaleRowScroll = scrollThis => {
     const saleRow = document.querySelector('.sale-row');
@@ -41,17 +41,17 @@ function HomeSale(){
           <div className="sale-timer">
             <div>
               <h3>Hours</h3>
-              <h2>{curHour}</h2>
+              <h2>{curTime.hours}</h2>
             </div>
             <h1>:</h1>
             <div>
               <h3>Minutes</h3>
-              <h2>{curMinute}</h2>
+              <h2>{curTime.minutes}</h2>
             </div>
             <h1>:</h1>
             <div>
               <h3>Seconds</h3>
-              <h2>{curSecond}</h2>
+              <h2>{curTime.seconds}</h2>
             </div>
           </div>
           <div className='sale-btn-row'>
