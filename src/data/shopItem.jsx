@@ -2,7 +2,7 @@ import RatingStar from '../assets/icons/rating-star.svg';
 import notOnSale from './json/store-items/notOnSale.json';
 import onSale from './json/store-items/onSale.json';
 import keyboard from '../assets/images/shop-items/keyboard.svg'
-
+import {useNavigate } from "react-router-dom";
 
 function getImage(imgPath) {
   switch (imgPath) {
@@ -18,6 +18,7 @@ function getImage(imgPath) {
 the new price and display that the item is on sale. 
 */
 function ShopItem() {
+  const navigate = useNavigate();
   const ShopConArr = () => (
     onSale.map(item => {
       //Calculate the discounted price from the oldprice and percent off. This only executes if the item is on sale, if its not the tenray returns an empty string
@@ -25,7 +26,7 @@ function ShopItem() {
 
       if(item.onSale){
         return(
-          <div className='store-item' key={item.id}>
+          <div className='store-item' key={item.id} onClick={() => navigate(`/product/${item.id}/${item.name}`)}>
             <div className='store-item-img'>
               <img src={getImage(item.img)} draggable="false" alt={item.name} />
               <div className='sale-percent-off' style={item.percentOff ? {display:'flex'} : {display: 'none'}}>
@@ -59,11 +60,13 @@ function ShopItem() {
 
 //If the item isnt on sale
 function ShopItemTwo(){
+  const navigate = useNavigate();
+
   const ShopConArrNotDiscount = () => (
     notOnSale.map(item => {
       if(!item.onSale){
         return(
-          <div className='store-item' key={item.id}>
+          <div className='store-item' key={item.id} onClick={() => navigate(`/product/${item.id}/${item.name}`)}>
             <div className='store-item-img'>
               <img src={getImage(item.img)} draggable="false" alt={item.name} />
             </div>
