@@ -1,17 +1,21 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "img": "keyboard",
     "name": "Gaming keyboard",
+    "brand": "Logitech",
     "oldPrice": 40,
     "price": 40,
     "rating": 5,
     "ratingCount": 75,
     "percentOff": 50,
-    "onSale": true
+    "onSale": true,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 2,
+    "id": 1,
     "img": "keyboard",
     "name": "Iphone 8",
     "oldPrice": 75,
@@ -19,10 +23,13 @@
     "rating": 4,
     "ratingCount": 2,
     "percentOff": 5,
-    "onSale": true
+    "onSale": true,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 3,
+    "id": 2,
     "img": "keyboard",
     "name": "Smart Toaster",
     "oldPrice": 245,
@@ -33,7 +40,7 @@
     "onSale": true
   },
   {
-    "id": 4,
+    "id": 3,
     "img": "keyboard",
     "name": "Gaming PC",
     "oldPrice": 1245,
@@ -41,10 +48,13 @@
     "rating": 5,
     "ratingCount": 52,
     "percentOff": 12,
-    "onSale": true
+    "onSale": true,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 5,
+    "id": 4,
     "img": "keyboard",
     "name": "Headset",
     "oldPrice": 20,
@@ -52,10 +62,13 @@
     "rating": 4,
     "ratingCount": 2.5,
     "percentOff": 8,
-    "onSale": true
+    "onSale": true,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 6,
+    "id": 5,
     "img": "keyboard",
     "name": "Google Home",
     "oldPrice": 50,
@@ -63,6 +76,9 @@
     "rating": 4,
     "ratingCount": 2.5,
     "percentOff": 25,
-    "onSale": true
+    "onSale": true,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   }
 ]

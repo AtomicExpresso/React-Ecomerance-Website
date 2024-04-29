@@ -1,6 +1,6 @@
 [
   {
-    "id": 7,
+    "id": 6,
     "img": "keyboard",
     "name": "Windows 11 PRO",
     "oldPrice": null,
@@ -8,10 +8,13 @@
     "rating": 4,
     "ratingCount": 11.3,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 8,
+    "id": 7,
     "img": "keyboard",
     "name": "Iphone X",
     "oldPrice": null,
@@ -19,10 +22,13 @@
     "rating": 4,
     "ratingCount": 31.7,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 9,
+    "id": 8,
     "img": "keyboard",
     "name": "Xbox One",
     "oldPrice": null,
@@ -30,10 +36,13 @@
     "rating": 3,
     "ratingCount": 12.3,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 10,
+    "id": 9,
     "img": "keyboard",
     "name": "PlayStation 5",
     "oldPrice": null,
@@ -41,10 +50,13 @@
     "rating": 5,
     "ratingCount": 15.1,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 11,
+    "id": 10,
     "img": "keyboard",
     "name": "Amazon Echo",
     "oldPrice": null,
@@ -52,10 +64,13 @@
     "rating": 3,
     "ratingCount": 1.6,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   },
   {
-    "id": 12,
+    "id": 11,
     "img": "keyboard",
     "name": "Airpods",
     "oldPrice": null,
@@ -63,6 +78,9 @@
     "rating": 5,
     "ratingCount": 42.8,
     "percentOff": null,
-    "onSale": false
+    "onSale": false,
+    "productinfo": [
+      {"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Sit amet mauris commodo quis imperdiet massa tincidunt. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Nibh praesent tristique magna sit. Auctor urna nunc id cursus metus aliquam eleifend mi. Aliquam ultrices sagittis orci a scelerisque purus semper. Morbi leo urna molestie at elementum eu facilisis sed odio. Accumsan lacus vel facilisis volutpat est velit. Lacus viverra vitae congue eu consequat ac. Sapien faucibus et molestie ac feugiat. Bibendum arcu vitae elementum curabitur vitae nunc sed. Quis imperdiet massa tincidunt nunc pulvinar. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Ultrices neque ornare aenean euismod elementum nisi."}
+    ]
   }
 ]
