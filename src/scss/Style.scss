@@ -646,7 +646,124 @@ nav {
 }
 
 //=================
-//Componets
+//2. Product page
+//=================
+
+.product-page{
+  & hr {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+//1b. Project page top
+.product-page-top{
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+
+  & hr {
+    max-width: 100%;
+  }
+
+  & .product-page-top-img{
+    margin: 50px 20px;
+    & img{
+      border: solid rgba(0, 0, 0, 0.338) 1px;
+      padding: 50px 30px;
+      border-radius: 10px;
+    }
+  }
+
+  & .product-page-rate-bar{
+    display: flex;
+    gap: 10px;
+
+    & h3 {
+      font-size: 20px;
+      cursor: pointer;
+      font-size: 14px;
+
+    }
+
+    & .product-page-ratings-count{
+      color: gray;    
+    }
+  }
+
+  & .product-page-top-item-container{
+    display: flex;
+    gap: 30px;
+
+    & button{
+      height: 50%;
+      width: 50%;
+      margin: 25px 0;
+    }
+  }
+
+  & .product-quan-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & input {
+      width: 100%;
+    }
+  }
+}
+
+.product-page-top-title{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & hr {
+    max-width: 100%;
+  }
+}
+
+//2b. Product page desc
+
+.product-desc{
+  margin: 10px 5%;
+  max-width: 800px;
+
+  & p {
+    color: rgb(88, 88, 88);
+  }
+}
+
+//3b. Product reviews
+
+.product-reviews{
+  margin: 30px 60px;
+
+  & hr {
+    max-width: 100%;
+    margin-right: auto !important;
+  }
+}
+
+.product-reviews-ratebar-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-reviews-ratebar-numbers{
+  display: flex;
+  gap: 10px;
+
+  & .product-reviews-ratebar-bar{
+    background-color: rgb(255, 179, 0);
+    height: 20px;
+    border-radius: 10px;
+  }
+}
+
+//=================
+//Componet builders
 //=================
 
 .store-item{
