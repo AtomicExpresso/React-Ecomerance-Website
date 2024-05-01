@@ -3,7 +3,7 @@ import SearchIcon from '../../assets/icons/search-icon.svg';
 import ProfileIcon from '../../assets/icons/profile-icon.svg';
 import CartIcon from '../../assets/icons/cart-icon.svg';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav>
       <h1>TechShop</h1>
@@ -28,7 +28,10 @@ const Navbar = () => {
         </div>
         <div className='profile-icons'>
           <div><img src={ProfileIcon}></img></div>
-          <div><img src={CartIcon}></img></div>
+          <a path='/CartPage'><div className='cart-icon'>
+            <img src={CartIcon}></img>
+            {props.itemCount > 0 && <div className='cart-item-count'><h1>{props.itemCount}</h1></div>}
+          </div></a>
         </div>
     </nav>
   );

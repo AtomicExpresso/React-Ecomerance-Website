@@ -66,6 +66,25 @@ nav {
     text-decoration: none;
     color: white;
   }
+
+  & .cart-icon{
+    position: relative;
+
+    & .cart-item-count{
+      top: 17px;
+      right: -6px;
+      position: absolute;
+      background-color: red;
+      border-radius: 50%;
+      height: 18px;
+      width: 18px;
+
+      & h1 {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .search-group{

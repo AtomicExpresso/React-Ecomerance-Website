@@ -5,7 +5,7 @@ import ProductDesc from "../componets/product/productDesc";
 import ProductReview from "../componets/product/productReview";
 
 //Creates the product page dynamically
-function ProductPage(){
+function ProductPage(props){
   const { id } = useParams();
   const title = itemText[id].name
   const desc = itemText[id].productinfo[0].desc
@@ -18,7 +18,7 @@ function ProductPage(){
 
   return (
     <div className="product-page">
-      <ProductTop title={title} desc={desc} img={getImg} price={price} brand={brand} rating={rating} rateingCount={rateingCount} inStock={inStock}/>
+      <ProductTop title={title} desc={desc} img={getImg} price={price} brand={brand} rating={rating} rateingCount={rateingCount} inStock={inStock} itemCount={props.itemCount} itemState={props.itemState}/>
       <hr></hr>
       <ProductDesc desc={desc}/>
       <ProductReview rating={rating} rateingCount={rateingCount}/>

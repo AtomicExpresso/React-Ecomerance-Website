@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import RatingStar from '../../assets/icons/rating-star.svg';
-import keyboard from '../../assets/images/shop-items/keyboard.svg'
+import keyboard from '../../assets/images/shop-items/keyboard.svg';
 
 //Weird issue with react and vite, Vite dosent allow dynamically importing images yet. So i have to do this weird work around to sort out the issue. Obv, this isnt very efficient, it will work for a small project like this, but if this was a real e-comerance site with a ton of different items, this method might cause performance issues
 const ImgSearch = img => {
@@ -11,7 +12,17 @@ const ImgSearch = img => {
 }
 
 function ProductTop(props){
-  
+  const [quanValue, setQuanValue] = useState(0)
+
+  const handleQuanChange = (event) => {
+    setQuanValue(event.target.value);
+  };
+
+  //Adds item to the total item count
+  const addToCart = () => {
+    props.itemState(prevState => Math.floor(Number(prevState) + Number(quanValue)))
+  }
+
   return (
     <div className="product-page-top">
     <div className="product-page-top-img">
@@ -31,11 +42,11 @@ function ProductTop(props){
       </div>
       <h2>${props.price}</h2>
       <div className="product-page-top-item-container">
-        <button className="btn btn-danger">Add to cart</button>
+        <button className="btn btn-danger" onClick={addToCart}>Add to cart</button>
         <button className="btn btn-warning">Wishlist</button>
         <div className="product-quan-container">
           <label htmlFor='product-quan'>Quantity:</label>
-          <input className="form-control" name='product-quan' type="number" min={1} max={50}></input>
+          <input className="form-control product-quan" name='product-quan' type="number" min={1} max={50} onChange={handleQuanChange} value={quanValue}></input>
         </div>
       </div>
     </div>
