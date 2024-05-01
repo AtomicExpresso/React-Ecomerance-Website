@@ -736,8 +736,17 @@ nav {
 
 //3b. Product reviews
 
+.product-reviews-container{
+  display: flex;
+  gap: 10px;
+  margin: 50px 0;
+}
+
 .product-reviews{
-  margin: 30px 60px;
+  background-color: #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+  width: 25%;
 
   & hr {
     max-width: 100%;
@@ -751,6 +760,14 @@ nav {
   gap: 10px;
 }
 
+.product-reviews-ratebar-bar-container{
+  background-color: #47474743;
+  width: 100%;
+  border-radius: 10px;
+  height: 20px;
+  margin-top: 10px;
+}
+
 .product-reviews-ratebar-numbers{
   display: flex;
   gap: 10px;
@@ -758,7 +775,57 @@ nav {
   & .product-reviews-ratebar-bar{
     background-color: rgb(255, 179, 0);
     height: 20px;
+    width: 1%;
     border-radius: 10px;
+  }
+}
+
+.product-reviews-col-one{
+  margin-left: 50px;
+  max-height: 50px;
+}
+
+.product-reviews-col-two{
+  margin-right: auto;
+  padding: 10px;
+}
+
+.product-review-col-two-user-container{
+  & img {
+    height: 42px;
+    width: 42px;
+  }
+
+  & .user-review-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  & .user-review-top{
+    display: flex;
+    gap: 5px;
+
+    & h2{
+      font-size: 23px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+
+  & .user-review-mid{
+    display: flex;
+    gap: 5px;
+    & h2{
+      font-size: 23px;
+      font-weight: 500;
+    }
+  }
+
+  & .user-review-bottom{
+    & p {
+      max-width: 500px;
+    }
   }
 }
 

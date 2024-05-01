@@ -1,0 +1,18 @@
+{
+  "UseReview": [
+    {
+      "id": 0,
+      "name": "Max",
+      "rating": 5,
+      "rateTitle": "Lorem ipsum",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin libero nunc consequat interdum varius"
+    },
+    {
+      "id": 1,
+      "name": "John",
+      "rating": 3,
+      "rateTitle": "Lorem ipsum",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin libero nunc consequat interdum varius"
+    }
+  ]
+}
