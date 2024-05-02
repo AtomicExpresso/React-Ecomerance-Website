@@ -24,7 +24,7 @@ function ProductTop(props){
   const addToCart = () => {
     props.itemState(prevState => Math.floor(Number(prevState) + Number(quanValue)))
     props.priceTotalState(prevState => (Number(prevState) + Number(discountedPrice) * Number(quanValue)).toFixed(2))
-    props.findItemsState(prevState => [...prevState, {title: props.title, price: props.onSale ? discountedPrice : props.price}])
+    props.findItemsState(prevState => [...prevState, {title: props.title, price: props.onSale ? discountedPrice : props.price, quan: quanValue}])
 
     console.log(props.findItems)
   }

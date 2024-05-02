@@ -852,6 +852,10 @@ nav {
 // 3. Cart page
 //============
 
+.cart-page-container{
+  margin: 25px 25px 150px;
+}
+
 .cart-item-container{
   display: flex;
   justify-content: space-between;
@@ -865,6 +869,11 @@ nav {
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
+
+  & .gift-check-box{
+    display: flex;
+    gap: 10px;
+  }
 
   & h3 {
     font-size: 18px;
