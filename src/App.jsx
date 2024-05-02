@@ -7,8 +7,9 @@ import ProductPage from "./pages/ProductPage";
 import { useState } from "react";
 
 function App() {
-  const [itemCount, setItemCount] = useState(0)
-  const [itemPriceTotal, setItemPriceTotal] = useState(0)
+  const [itemCount, setItemCount] = useState(0);
+  const [itemPriceTotal, setItemPriceTotal] = useState(0);
+  const [findItems, setFindItems] = useState([]);
 
   return (
     <div>
@@ -17,8 +18,8 @@ function App() {
         <Navbar itemCount={itemCount} itemState={setItemCount}/>
         <Routes>
           <Route path="/" element={<LandingPage itemCount={itemCount}/>} />
-          <Route path="/Cartpage" element={<CartPage itemCount={itemCount}/>} />
-          <Route path="product/:id/:name" element={<ProductPage itemCount={itemCount} itemState={setItemCount}/>} />
+          <Route path="/Cartpage" element={<CartPage itemCount={itemCount} priceTotalState={setItemPriceTotal} itemPriceTotal={itemPriceTotal} findItems={findItems} findItemsState={setFindItems}/>} />
+          <Route path="product/:id/:name" element={<ProductPage itemCount={itemCount} itemState={setItemCount} priceTotalState={setItemPriceTotal} findItems={findItems} findItemsState={setFindItems}/>} />
         </Routes>
         <Footer/>
       </div>

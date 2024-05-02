@@ -15,10 +15,13 @@ function ProductPage(props){
   const rating = itemText[id].rating
   const rateingCount = itemText[id].ratingCount
   const inStock = itemText[id].inStock
+  const oldPrice = itemText[id].oldPrice
+  const percentOff = itemText[id].percentOff
+  const onSale = itemText[id].onSale
 
   return (
     <div className="product-page">
-      <ProductTop title={title} desc={desc} img={getImg} price={price} brand={brand} rating={rating} rateingCount={rateingCount} inStock={inStock} itemCount={props.itemCount} itemState={props.itemState}/>
+      <ProductTop title={title} desc={desc} img={getImg} price={price} brand={brand} rating={rating} rateingCount={rateingCount} inStock={inStock} itemCount={props.itemCount} itemState={props.itemState} priceTotalState={props.priceTotalState} oldPrice={oldPrice} percentOff={percentOff} onSale={onSale} findItems={props.findItems} findItemsState={props.findItemsState}/>
       <hr></hr>
       <ProductDesc desc={desc}/>
       <ProductReview rating={rating} rateingCount={rateingCount}/>

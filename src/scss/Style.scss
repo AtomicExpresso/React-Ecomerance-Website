@@ -848,6 +848,51 @@ nav {
   }
 }
 
+//============
+// 3. Cart page
+//============
+
+.cart-item-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+
+.cart-price-bar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+
+  & h3 {
+    font-size: 18px;
+  }
+
+  & span {
+    font-weight: 700;
+  }
+
+  & button {
+    margin: auto;
+  }
+}
+
+.cart-user-item{
+  display: flex;
+  gap: 15px;
+
+  & h1 {
+    font-size: 28px;
+  }
+  & h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0;
+  }
+}
+
 //=================
 //Componet builders
 //=================
