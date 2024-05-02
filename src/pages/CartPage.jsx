@@ -1,11 +1,29 @@
+import { useState } from "react"
+
 function CartPage(props){
-  const FindItmes = props.findItems.map(item => {
+
+  const RemoveItemFromCart = (item, index) => {
+    props.itemState(prevState => prevState - item.quan);
+    props.priceTotalState(prevState => (prevState - item.price * item.quan).toFixed(2));
+
+    props.findItemsState(prevState => {
+      const updatedItems = [...prevState];
+      updatedItems.splice(index, 1);
+      return updatedItems;
+    })
+    console.log(props.findItems)
+  }
+
+  const FindItmes = props.findItems.map((item, index) => {
     return (
-      <div key={item.length}>
-        <div className="cart-user-item">
+      <div key={index}>
+        <div className="cart-user-item" id={index}>
           <h1>{item.title}</h1>
           <h2>${item.price}</h2>
           <h2>X{item.quan}</h2>
+          <div>
+            <button className="btn btn-danger" onClick={() => RemoveItemFromCart(item, index)}>Remove</button>
+          </div>
         </div>
       </div>
     )

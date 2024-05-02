@@ -18,7 +18,7 @@ function App() {
         <Navbar itemCount={itemCount} itemState={setItemCount}/>
         <Routes>
           <Route path="/" element={<LandingPage itemCount={itemCount}/>} />
-          <Route path="/Cartpage" element={<CartPage itemCount={itemCount} priceTotalState={setItemPriceTotal} itemPriceTotal={itemPriceTotal} findItems={findItems} findItemsState={setFindItems}/>} />
+          <Route path="/Cartpage" element={<CartPage itemCount={itemCount} itemState={setItemCount} priceTotalState={setItemPriceTotal} itemPriceTotal={itemPriceTotal} findItems={findItems} findItemsState={setFindItems}/>} />
           <Route path="product/:id/:name" element={<ProductPage itemCount={itemCount} itemState={setItemCount} priceTotalState={setItemPriceTotal} findItems={findItems} findItemsState={setFindItems}/>} />
         </Routes>
         <Footer/>

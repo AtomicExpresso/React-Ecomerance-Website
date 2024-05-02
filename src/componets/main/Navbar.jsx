@@ -28,10 +28,10 @@ const Navbar = (props) => {
         </div>
         <div className='profile-icons'>
           <div><img src={ProfileIcon}></img></div>
-          <a path='/CartPage'><div className='cart-icon'>
+          <Link to='/CartPage'><div className='cart-icon'>
             <img src={CartIcon}></img>
             {props.itemCount > 0 && <div className='cart-item-count'><h1>{props.itemCount}</h1></div>}
-          </div></a>
+          </div></Link>
         </div>
     </nav>
   );
