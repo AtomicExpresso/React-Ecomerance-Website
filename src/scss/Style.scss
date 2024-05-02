@@ -444,6 +444,19 @@ nav {
   }
 }
 
+.category-container{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 8%;
+  gap: 10px;
+
+  & button {
+    margin: 20px auto;
+    width: 30%;
+  }
+}
+
+
 .category-item-container{
   display: flex;
   flex-direction: column;
@@ -540,6 +553,19 @@ nav {
 }
 
 //6a. Articles
+.article-container{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 8%;
+  gap: 10px;
+
+  & button {
+    width: 20%;
+    height: 10%;
+  }
+}
+
+
 .article-item{
   display: flex;
   flex-direction: column;
@@ -996,6 +1022,112 @@ nav {
     & h3 {
       font-size: 12px;
       text-decoration: line-through;
+    }
+  }
+}
+
+//=================
+//Media querys
+//=================
+
+@media (max-width: 760px){
+  nav {
+    & h1 {
+      font-size: 24px;
+    }
+
+    & ul {
+      display: none;
+    }
+  }
+
+  .home-hero-list {
+    & li {
+      font-size: 13px;
+    }
+  }
+
+  .sale-title{
+    & h1 {
+      font-size: 16px;
+    }
+
+    & img {
+      width: 16px;
+    }
+  }
+
+  .category-container{
+    display: none;
+  }
+
+  .article-container{
+    display: none;
+  }
+
+  .cart-page-container{
+    margin: 10px;
+  }
+
+  .cart-item-bar{
+    margin: 0;
+  }
+
+  .gift-check-box{
+    & label,
+    & input{
+      display: none;
+    }
+  }
+
+  .cart-user-item{
+    & h1 {
+      font-size: 20px;
+    }
+
+    & h2 {
+      font-size: 18px;
+    }
+
+    & button {
+      width: 110px;
+    }
+  }
+
+  .footer-socials{
+    & img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .footer-col{
+    & h1 {
+      font-size: 18px;
+    }
+
+    & a {
+      font-size: 12px;
+    }
+  }
+
+  .footer-logo{
+    & h1 {
+      font-size: 25px
+    }
+
+    & p {
+      font-size: 14px;
+    }
+  }
+
+  .footer-app{
+    display: none;
+  }
+
+  .product-page-top-img{
+    & img {
+      width: 100px;
     }
   }
 }

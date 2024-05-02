@@ -70,7 +70,7 @@ function HomeNewArrival(){
 
 
   return (
-    <div className="trending-container">
+    <div className="article-container">
       <div className="sales-legend">
         <div></div>
         <h1>Featured</h1>

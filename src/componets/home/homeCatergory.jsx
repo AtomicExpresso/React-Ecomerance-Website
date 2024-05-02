@@ -25,7 +25,7 @@ function HomeCategory(){
   }
 
   return (
-    <div className="sale-container">
+    <div className="category-container">
       <div className="sales-legend">
         <div></div>
         <h1>Categories</h1>
