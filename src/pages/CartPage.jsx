@@ -1,4 +1,5 @@
 import { useState } from "react"
+import getImage from "../data/imageImport";
 
 function CartPage(props){
 
@@ -18,6 +19,7 @@ function CartPage(props){
     return (
       <div key={index}>
         <div className="cart-user-item" id={index}>
+          <img src={getImage(item.img)}></img>
           <h1>{item.title}</h1>
           <h2>${item.price}</h2>
           <h2>X{item.quan}</h2>

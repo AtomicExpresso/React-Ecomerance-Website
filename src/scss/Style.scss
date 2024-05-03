@@ -937,6 +937,11 @@ nav {
     height: auto;
     width: 100px
   }
+
+  & img {
+    height: 100px !important;
+    width: 100px !important;
+  }
 }
 
 //=================
@@ -1105,6 +1110,22 @@ nav {
     & button {
       width: 110px;
     }
+
+    & img {
+      height: 55px !important;
+      width: 55px !important;
+    }
+  }
+
+  .cart-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 30px;
+  }
+
+  .cart-price-bar{
+    margin: 30px 0;
   }
 
   .footer-socials{

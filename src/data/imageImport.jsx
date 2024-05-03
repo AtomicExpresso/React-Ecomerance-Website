@@ -1,5 +1,3 @@
-import RatingStar from '../assets/icons/rating-star.svg';
-import onSale from './json/store-items/onSale.json';
 import keyboard from '../assets/images/shop-items/keyboard.svg';
 import monitor from '../assets/images/shop-items/monitor.svg';
 import gamingpc from '../assets/images/shop-items/gamingpc.webp';
