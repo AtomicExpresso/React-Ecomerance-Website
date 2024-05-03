@@ -1,3 +1,13 @@
+/**========Directory========
+1. Navbar
+2. Footer
+3. Homepage
+4. Product page
+5. Cart page
+6. Componet builders
+7. Media querys
+//=========================**/
+//Inital setup
 @font-face {
   font-family: 'Roboto';
   src: url(../assets/fonts/Roboto.ttf);
@@ -262,7 +272,7 @@ nav {
 
 
 //============
-// 2. Home Page
+// 3. Home Page
 //============
 
 //Setup
@@ -695,7 +705,7 @@ nav {
 }
 
 //=================
-//2. Product page
+//4. Product page
 //=================
 
 .product-page{
@@ -881,7 +891,7 @@ nav {
 }
 
 //============
-// 3. Cart page
+// 5. Cart page
 //============
 
 .cart-page-container{
@@ -945,7 +955,7 @@ nav {
 }
 
 //=================
-//Componet builders
+//6. Componet builders
 //=================
 
 .store-item{
@@ -1038,7 +1048,7 @@ nav {
 }
 
 //=================
-//Media querys
+//7. Media querys
 //=================
 
 @media (max-width: 760px){

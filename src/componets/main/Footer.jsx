@@ -87,7 +87,7 @@ function Footer(){
         </div>
         <div className="footer-bottom">
           <hr></hr>
-          <h2>© Copyright <span><a href='https://atomicdev.vercel.app/'>Atomic</a></span> 2024. All right reserved</h2>
+          <h2>© Copyright <span><a href='https://github.com/AtomicExpresso'>Atomic</a></span> 2024. All right reserved</h2>
         </div>
     </div>
   )
