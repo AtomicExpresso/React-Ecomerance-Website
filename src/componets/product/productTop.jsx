@@ -1,15 +1,6 @@
 import { useState } from 'react';
 import RatingStar from '../../assets/icons/rating-star.svg';
-import keyboard from '../../assets/images/shop-items/keyboard.svg';
-
-//Weird issue with react and vite, Vite dosent allow dynamically importing images yet. So i have to do this weird work around to sort out the issue. Obv, this isnt very efficient, it will work for a small project like this, but if this was a real e-comerance site with a ton of different items, this method might cause performance issues
-const ImgSearch = img => {
-  switch(img){
-    case 'keyboard':
-      return keyboard
-    break;
-  }
-}
+import getImage from '../../data/imageImport';
 
 function ProductTop(props){
   const [quanValue, setQuanValue] = useState(0)
@@ -22,9 +13,11 @@ function ProductTop(props){
 
   //Adds item to the total item count and calculates the price
   const addToCart = () => {
-    props.itemState(prevState => Math.floor(Number(prevState) + Number(quanValue)))
-    props.priceTotalState(prevState => (Number(prevState) + Number(discountedPrice) * Number(quanValue)).toFixed(2))
-    props.findItemsState(prevState => [...prevState, {title: props.title, price: props.onSale ? discountedPrice : props.price, quan: quanValue}])
+    if(quanValue > 0){
+      props.itemState(prevState => Math.floor(Number(prevState) + Number(quanValue)))
+      props.priceTotalState(prevState => (Number(prevState) + Number(discountedPrice) * Number(quanValue)).toFixed(2))
+      props.findItemsState(prevState => [...prevState, {title: props.title, price: props.onSale ? discountedPrice : props.price, quan: quanValue}])
+    }
 
     console.log(props.findItems)
   }
@@ -32,7 +25,7 @@ function ProductTop(props){
   return (
     <div className="product-page-top">
     <div className="product-page-top-img">
-      <img src={ImgSearch(props.img)}></img>
+      <img src={getImage(props.img)}></img>
     </div>
     <div className="product-page-top-title"> 
       <h1>{props.title}</h1>

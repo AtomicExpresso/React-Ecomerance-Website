@@ -17,11 +17,11 @@
   },
   {
     "id": 1,
-    "img": "keyboard",
-    "name": "Iphone 8",
+    "img": "monitor",
+    "name": "Monitor",
     "brand": "Logitech",
-    "oldPrice": 75,
-    "price": 75,
+    "oldPrice": 575,
+    "price": 575,
     "rating": 4,
     "ratingCount": 2,
     "inStock": true,
@@ -33,7 +33,7 @@
   },
   {
     "id": 2,
-    "img": "keyboard",
+    "img": "smarttoaster",
     "name": "Smart Toaster",
     "brand": "Logitech",
     "oldPrice": 245,
@@ -49,7 +49,7 @@
   },
   {
     "id": 3,
-    "img": "keyboard",
+    "img": "gamingpc",
     "name": "Gaming PC",
     "brand": "Logitech",
     "oldPrice": 1245,
@@ -65,7 +65,7 @@
   },
   {
     "id": 4,
-    "img": "keyboard",
+    "img": "headset",
     "name": "Headset",
     "brand": "Logitech",
     "oldPrice": 20,
@@ -81,7 +81,7 @@
   },
   {
     "id": 5,
-    "img": "keyboard",
+    "img": "googlehome",
     "name": "Google Home",
     "brand": "Logitech",
     "oldPrice": 50,
@@ -97,11 +97,11 @@
   },
   {
     "id": 6,
-    "img": "keyboard",
-    "name": "Windows 11 PRO",
+    "img": "laptop",
+    "name": "Laptop",
     "brand": "Logitech",
     "oldPrice": null,
-    "price": 45,
+    "price": 445,
     "rating": 4,
     "ratingCount": 11.3,
     "inStock": true,
@@ -113,7 +113,7 @@
   },
   {
     "id": 7,
-    "img": "keyboard",
+    "img": "iphonex",
     "name": "Iphone X",
     "brand": "Logitech",
     "oldPrice": null,
@@ -129,8 +129,8 @@
   },
   {
     "id": 8,
-    "img": "keyboard",
-    "name": "Xbox One",
+    "img": "xbox",
+    "name": "Xbox",
     "brand": "Logitech",
     "oldPrice": null,
     "price": 200,
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "img": "keyboard",
+    "img": "ps5",
     "name": "PlayStation 5",
     "brand": "Logitech",
     "oldPrice": null,
@@ -161,7 +161,7 @@
   },
   {
     "id": 10,
-    "img": "keyboard",
+    "img": "amazonecho",
     "brand": "Logitech",
     "name": "Amazon Echo",
     "oldPrice": null,
@@ -177,7 +177,7 @@
   },
   {
     "id": 11,
-    "img": "keyboard",
+    "img": "airpods",
     "name": "Airpods",
     "brand": "Logitech",
     "oldPrice": null,

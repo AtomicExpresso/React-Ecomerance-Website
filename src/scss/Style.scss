@@ -283,6 +283,10 @@ nav {
   & ul {
     list-style: none;
   }
+
+  & img {
+    border-radius: 10px;
+  }
 }
 
 .home-hero-list{
@@ -714,6 +718,8 @@ nav {
   & .product-page-top-img{
     margin: 50px 20px;
     & img{
+      height: 252px;
+      width: 252px;
       border: solid rgba(0, 0, 0, 0.338) 1px;
       padding: 50px 30px;
       border-radius: 10px;
@@ -1041,6 +1047,13 @@ nav {
     }
   }
 
+  .product-page-top-img{
+    & img {
+      height: 150px !important;
+      width: 150px !important;
+    }
+  }
+
   .home-hero-list {
     & li {
       font-size: 13px;
@@ -1123,11 +1136,5 @@ nav {
 
   .footer-app{
     display: none;
-  }
-
-  .product-page-top-img{
-    & img {
-      width: 100px;
-    }
   }
 }

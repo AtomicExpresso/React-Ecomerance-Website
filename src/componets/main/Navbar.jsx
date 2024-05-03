@@ -6,7 +6,7 @@ import CartIcon from '../../assets/icons/cart-icon.svg';
 const Navbar = (props) => {
   return (
     <nav>
-      <h1>TechShop</h1>
+      <Link to="/"><h1>TechShop</h1></Link>
       <ul>
         <li>
           <Link to="/">Home</Link>

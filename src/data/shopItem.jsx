@@ -1,19 +1,10 @@
 import RatingStar from '../assets/icons/rating-star.svg';
-import notOnSale from './json/store-items/notOnSale.json';
 import onSale from './json/store-items/onSale.json';
-import keyboard from '../assets/images/shop-items/keyboard.svg'
+import getImage from './imageImport';
+
+
 import {useNavigate } from "react-router-dom";
 
-function getImage(imgPath) {
-  switch (imgPath) {
-    case 'keyboard':
-      return keyboard;
-    case 'path/to/image2.jpg':
-      return image2;
-    default:
-      return null;
-  }
-}
 /* Generates a shop item from the shopcontext array, if the shop item is on sale, it will calculate
 the new price and display that the item is on sale. 
 */
@@ -63,7 +54,7 @@ function ShopItemTwo(){
   const navigate = useNavigate();
 
   const ShopConArrNotDiscount = () => (
-    notOnSale.map(item => {
+    onSale.map(item => {
       if(!item.onSale){
         return(
           <div className='store-item' key={item.id} onClick={() => navigate(`/product/${item.id}/${item.name}`)}>
